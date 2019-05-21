@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 public class MainActivity extends AppCompatActivity {
     private EditText mInputNote;
     private Button mBtnSaveNote;
@@ -43,14 +42,6 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         mInputNote = findViewById(R.id.inputNote);
         mBtnSaveNote = findViewById(R.id.btnSaveNote);
-
         myNoteSharedPref = getSharedPreferences("MyNote", MODE_PRIVATE);
-
-        mBtnSaveNote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 }
